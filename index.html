@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дело №19: Жарья</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Иконка сайта со смайликом -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦋</text></svg>">
+</head>
+<body>
+    <!-- Экран 1: Идентификация -->
+    <section id="identification" class="screen active">
+        <div class="background-video">
+            <video autoplay muted loop id="bgVideo">
+                <source src="assets/sakura.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="terminal-title">СИСТЕМА ДОСТУПА</span>
+            </div>
+            <div class="terminal-content">
+                <p class="typewriter">> ОБНАРУЖЕНО СОБЫТИЕ: ДЕНЬ РОЖДЕНИЯ</p>
+                <p class="typewriter delay-1">> ДЛЯ ДОСТУПА ТРЕБУЕТСЯ КЛЮЧ</p>
+                <div class="input-group">
+                    <input type="password" id="dateInput" placeholder="угадайка(ладно без точек и пробелов деньмесяцгод др)" maxlength="8">
+                    <button id="connectBtn">[ ПОДКЛЮЧИТЬСЯ ]</button>
+                </div>
+                <p id="errorMsg" class="error"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Экран 2: Досье -->
+    <section id="dossier" class="screen">
+        <div class="container">
+            <div class="case-file">
+                <h1>ДОСЬЕ №19: <span class="name-highlight">ДАША</span></h1>
+                
+                <div class="evidence-list">
+                    <div class="evidence-item">
+                        <span class="evidence-number">УЛИКА #001</span>
+                        <p>Кодовое имя: <strong>Жарья</strong>. Объект излучает положительные вибрации.</p>
+                        <div class="butterfly-hover">🦋</div>
+                    </div>
+                    
+                    <div class="evidence-item">
+                        <span class="evidence-number">УЛИКА #002</span>
+                        <p>Впервые замечен: <strong>22.11.2006</strong>. С тех пор фиксируется постоянный рост её познания мира.</p>
+                        <div class="butterfly-hover">🦋</div>
+                    </div>
+                    
+                    <div class="evidence-item">
+                        <span class="evidence-number">УЛИКА #003</span>
+                        <p>Локации повышенной активности: <strong>Кофейни, книжные магазины, кроватка и конечно же сериалы</strong>.</p>
+                        <div class="butterfly-hover">🦋</div>
+                    </div>
+                    
+                    <div class="evidence-item">
+                        <span class="evidence-number">УЛИКА #004</span>
+                        <p>Источник энергии: <strong>Разные вкусняшки, сплетни</strong>.</p>
+                        <div class="butterfly-hover">🦋</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Экран 3: Фото-доказательства -->
+    <section id="evidence" class="screen">
+        <div class="container">
+            <h2>АРХИВ СВИДЕТЕЛЬСТВ</h2>
+            <div class="photo-grid">
+                <div class="photo-frame">
+                    <div class="photo-container double-exposure">
+                        <img src="assets/photo1.jpg" alt="Фото 1" onerror="this.style.display='none'">
+                        <div class="photo-overlay">
+                            <span class="photo-caption">Рис. 1. Объект в естественной среде обитания</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="photo-frame">
+                    <div class="photo-container double-exposure">
+                        <img src="assets/photo2.jpg" alt="Фото 2" onerror="this.style.display='none'">
+                        <div class="photo-overlay">
+                            <span class="photo-caption">Рис. 2. Проявление высших форм счастья</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="photo-frame">
+                    <div class="photo-container double-exposure">
+                        <img src="assets/photo3.jpg" alt="Фото 3" onerror="this.style.display='none'">
+                        <div class="photo-overlay">
+                            <span class="photo-caption">Рис. 3. Зафиксирован момент мем</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Экран 4: Показания свидетелей -->
+    <section id="witnesses" class="screen">
+        <div class="background-video">
+            <video autoplay muted loop id="fireVideo">
+                <source src="assets/fireplace.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-dark"></div>
+        </div>
+        
+        <div class="container">
+            <h2>ПРОТОКОЛ ДОПРОСА ДРУЗЕЙ</h2>
+            <div class="testimony-cards">
+                <div class="testimony-card glass">
+                    <div class="stamp">СВИДЕТЕЛЬ: АНГЕЛИНА-ЛОСОСИНА<br>  22.11.2025 | 23:08 </div>
+                    <p>"Желаю выбирать себя и свой комфорт, слушать всегда свою интуицию и организм."</p>
+                </div>
+                
+                <div class="testimony-card glass">
+                    <div class="stamp">СВИДЕТЕЛЬ: КОРОЛЕВА ВАМПИРОВ<br>  22.11.2025 | 23:19 </div>
+                    <p>"Желаю больше путешествий по миру в сопровождение любящих тебе людей(или одна, как захочешь) и наслаждаться каждым моментом."</p>
+                </div>
+                
+                <div class="testimony-card glass">
+                    <div class="stamp">СВИДЕТЕЛЬ: NO_NAME<br>  22.11.2025 | 22:22 </div>
+                    <p>"Коллаж и винтаж - объект досье знает о чём речь."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Экран 5: Вердикт -->
+    <section id="verdict" class="screen">
+        <div class="hero-image">
+            <img src="assets/hero-photo.jpg" alt="Главное фото" onerror="this.style.display='none'">
+            <div class="overlay-verdict"></div>
+        </div>
+        
+        <div class="verdict-content">
+            <h1 class="verdict-title">ОБЪЕКТ <span class="name-highlight">ЖАРЬЯ</span> ПРИЗНАН...</h1>
+            <p class="verdict-subtitle">САМЫМ ЯРКИМ И УДИВИТЕЛЬНЫМ СОБЫТИЕМ.</p>
+            <p class="verdict-final">ВЕРДИКТ: ЛЮБИТЬ. ЦЕНИТЬ. ОБНИМАТЬ. </p>
+            <div class="birthday-wish">
+                <h2>С ДНЁМ РОЖДЕНИЯ!</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Аудио элемент -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элемент.
+    </audio>
+
+    <!-- Кнопка управления музыкой -->
+    <button id="musicToggle" class="music-toggle">🔇</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
